@@ -1,0 +1,192 @@
+body {
+	background: 
+radial-gradient(circle closest-side at 60% 43%, #323232 26%, rgba(187,0,51,0) 27%),
+radial-gradient(circle closest-side at 40% 43%, #323232 26%, rgba(187,0,51,0) 27%),
+radial-gradient(circle closest-side at 40% 22%, #373737 45%, rgba(221,51,85,0) 46%),
+radial-gradient(circle closest-side at 60% 22%, #373737 45%, rgba(221,51,85,0) 46%),
+radial-gradient(circle closest-side at 50% 35%, #373737 30%, rgba(221,51,85,0) 31%),
+
+radial-gradient(circle closest-side at 60% 43%, #323232 26%, rgba(187,0,51,0) 27%) 50px 50px,
+radial-gradient(circle closest-side at 40% 43%, #323232 26%, rgba(187,0,51,0) 27%) 50px 50px,
+radial-gradient(circle closest-side at 40% 22%, #3c3c3c 45%, rgba(221,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 60% 22%, #3c3c3c 45%, rgba(221,51,85,0) 46%) 50px 50px,
+radial-gradient(circle closest-side at 50% 35%, #3c3c3c 30%, rgba(221,51,85,0) 31%) 50px 50px;
+	background-color:#323232;
+	background-size:100px 100px;
+	font-family: 'Lato', sans-serif;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Стилизация заголовка */
+h4 {
+    font-size: 24px;
+    color: #d6336c;
+    margin-bottom: 20px;
+}
+
+/* Стилизация кнопок */
+.btn {
+    padding: 15px 40px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, font-size 0.3s ease, background-color 0.3s;
+}
+
+/* Кнопка "Nope" */
+.btn.no {
+    background-color: #ff4d4d;
+}
+
+/* Кнопка "Yup" */
+.btn.yes {
+    background-color: #4caf50;
+}
+
+/* Анимация при наведении */
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Анимация при нажатии */
+.btn:active {
+    transform: scale(0.9);
+}
+
+/* Контейнеры для ответов */
+.answer--yes,
+.answer--no {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 450px) {
+    h4 {
+        font-size: 18px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+
+    .btn.no {
+        bottom: 40px;
+        right: 5%;
+    }
+
+    .btn.yes {
+        bottom: 40px;
+        left: 5%;
+    }
+}
+
+/* 💖 Страница с таймером */
+.love-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#timer {
+    font-size: 36px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+.gif {
+    max-width: 90vw;
+    max-height: 50vh;
+    object-fit: contain;
+    margin-top: 20px;
+}
+/*
+Signature
+---- */
+
+.signature {
+	position: absolute;
+	margin: auto;
+	bottom: 0;
+	top: auto;
+	width: 95%;
+}
+
+.signature p{
+	text-align: center;
+	font-family: Helvetica, Arial, Sans-Serif;
+	font-size: 0.85em;
+	color: #FFFFFF;
+}
+
+.signature .much-heart{
+	display: inline-block;
+	position: relative;
+	margin: 0 4px;
+	height: 10px;
+	width: 10px;
+	background: #D8124B;
+	border-radius: 4px;
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.signature .much-heart::before, 
+.signature .much-heart::after {
+	  display: block;
+  content: '';
+  position: absolute;
+  margin: auto;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #D8124B;
+  top: -4px;
+}
+
+.signature .much-heart::after {
+	bottom: 0;
+	top: auto;
+	left: -4px;
+}
+
+.signature a {
+	color: #D8124B;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.signature a:hover {
+	color: coral;
+	text-decoration: none;
+	font-weight: bold;
+}
